@@ -56,8 +56,8 @@ def letter_grades(highest):
     """
     out = []
     increment = round((highest - 40) / 4)
-    for i in range(0, 4):
-        this_increment = i * increment
+    for index in range(0, 4):
+        this_increment = index * increment
         out.append(41+this_increment)
     return out
 
@@ -70,8 +70,8 @@ def student_ranking(student_scores, student_names):
     :return: list - of strings in format ["<rank>. <student name>: <score>"].
     """
     out = []
-    for i, name in enumerate(student_names):
-        out.append(f"{i+1}. {name}: {student_scores[i]}")
+    for index, name in enumerate(student_names):
+        out.append(f"{index+1}. {name}: {student_scores[index]}")
     return out
 
 
