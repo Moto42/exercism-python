@@ -1,2 +1,9 @@
 def convert(number):
-    pass
+    output = ""
+    if number % 3 == 0:
+        output += "Pling"
+    if number % 5 == 0:
+        output += "Plang"
+    if number % 7 == 0:
+        output += "Plong"
+    return output if len(output) > 0 else str(number)
